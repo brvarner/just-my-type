@@ -40,10 +40,6 @@ $(document)
     $(`#${e.key.charCodeAt(0)}`).css("backgroundColor", "");
   });
 
-//Displaying sentences in div, one at a time.
-// There has to be a for loop going through the 'sentences' array,
-// pulling a new index into the window after the previous index is completed
-
 // Counting current letter
 let letterMarker = 0;
 
@@ -69,7 +65,6 @@ let gameTime = function () {
 
   $(document).keypress(function (e) {
     let letterChecker = mySentence.charAt(letterMarker);
-    let firstLetterLoader = mySentence.charAt(0);
     // Emptying target div
     $targetLetter.empty();
     // // Reloading with next letter
